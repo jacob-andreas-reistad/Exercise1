@@ -4,10 +4,10 @@ Exercise 1 - Theory questions
 ### Concepts
 
 What is the difference between *concurrency* and *parallelism*?
-> *Your answer here*
+> concurrency is when a program does several logical operations concurrently, meaning that the operations might overlap in time, but are not executed at the same time. Parallelism is when several logical operations are executed simultaneously, meaning that they are executed at the same time. Parallelism requires several CPUs while concurrency does not.
 
 What is the difference between a *race condition* and a *data race*? 
-> *Your answer here* 
+> *Your answer here*
  
 *Very* roughly - what does a *scheduler* do, and how does it do it?
 > *Your answer here* 
