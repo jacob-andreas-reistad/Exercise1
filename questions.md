@@ -7,10 +7,10 @@ What is the difference between *concurrency* and *parallelism*?
 > concurrency is when a program does several logical operations concurrently, meaning that the operations might overlap in time, but are not executed at the same time. Parallelism is when several logical operations are executed simultaneously, meaning that they are executed at the same time. Parallelism requires several CPUs while concurrency does not.
 
 What is the difference between a *race condition* and a *data race*? 
-> *Your answer here*
+> A race condition is when the result of a program depends on the order of operations in time. A data race is when two or more threads try to access the same memory adress, where the one thread is trying to perform a write-operation. So, a data race is a type of race condition.
  
 *Very* roughly - what does a *scheduler* do, and how does it do it?
-> *Your answer here* 
+> A scheduler decides what thread to run next.
 
 
 ### Engineering
