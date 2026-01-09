@@ -19,7 +19,7 @@ Why would we use multiple threads? What kinds of problems do threads solve?
 > We use multiple threads in order to make our program concurrent: faster and more responsive, and also more structured. We might use threads to controll processes that involves sensor reading and actuating (ex: robotic arm control, elevator control).
 
 Some languages support "fibers" (sometimes called "green threads") or "coroutines"? What are they, and why would we rather use them over threads?
-> *Your answer here*
+> Fibers has the same functionality as threads, only they are more scalable compared to threads. While multiple threads require larger CPUs, fibers does not require multiple cores.
 
 Does creating concurrent programs make the programmer's life easier? Harder? Maybe both?
 > Maybe both! It makes it easier in that the code gets a clear structure and it is easy to understand what the code does. However, it could make it harder due to several conciderations (like race conditions).
