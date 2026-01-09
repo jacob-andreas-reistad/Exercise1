@@ -24,10 +24,14 @@ int main(){
     // TODO: 
     // start the two functions as their own threads using `pthread_create`
     // Hint: search the web! Maybe try "pthread_create example"?
-    
+    pthread_t th1, th2;
+    pthread_create(&th1, NULL, incrementingThreadFunction(), NULL);
+    pthread_create(&th2, NULL, decrementingThreadFunction(), NULL);
     // TODO:
     // wait for the two threads to be done before printing the final result
-    // Hint: Use `pthread_join`    
+    // Hint: Use `pthread_join`  
+    pthread_join(th1, NULL);
+    pthread_join(th2, NULL)
     
     printf("The magic number is: %d\n", i);
     return 0;
